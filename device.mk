@@ -265,7 +265,8 @@ PRODUCT_PACKAGES += \
     init.qti.fm.sh \
     init.recovery.qcom.rc \
     init.target.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.safailnet.rc
 
 # Ion
 PRODUCT_PACKAGES += \
