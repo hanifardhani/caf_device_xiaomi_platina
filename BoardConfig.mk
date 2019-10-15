@@ -133,7 +133,7 @@ HWUI_COMPILE_FOR_PERF := true
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_platina
-TARGET_RECOVERY_DEVICE_MODULES := //$(DEVICE_PATH):libinit_platina
+TARGET_RECOVERY_DEVICE_MODULES := libinit_platina
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 
 # IPA
