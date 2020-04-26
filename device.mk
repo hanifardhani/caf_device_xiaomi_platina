@@ -402,7 +402,7 @@ PRODUCT_COPY_FILES += \
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-
+    
 # Low power Whitelist
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
@@ -410,6 +410,9 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
+    
+# QTI Common
+TARGET_COMMON_QTI_COMPONENTS := perf
 
 # RCS
 PRODUCT_PACKAGES += \
