@@ -118,10 +118,11 @@ void LocationAPI::onRemoveClientCompleteCb (LocationAdapterTypeMask adapterType)
     }
     pthread_mutex_unlock(&gDataMutex);
 
-    if ((true == invokeCallback) && (nullptr != destroyCompleteCb)) {
+    if (invokeCallback) {
         LOC_LOGd("invoke client destroy cb");
-        (destroyCompleteCb) ();
-        LOC_LOGd("finish invoke client destroy cb");
+        if (!destroyCompleteCb) {
+            (destroyCompleteCb) ();
+        }
 
         delete this;
     }
@@ -276,7 +277,7 @@ LocationAPI::destroy(locationApiDestroyCompleteCallback destroyCompleteCb)
 
         gData.clientData.erase(it);
 
-        if ((NULL != destroyCompleteCb) && (false == needToWait)) {
+        if (!needToWait) {
             invokeDestroyCb = true;
         }
     } else {
@@ -285,8 +286,10 @@ LocationAPI::destroy(locationApiDestroyCompleteCallback destroyCompleteCb)
     }
 
     pthread_mutex_unlock(&gDataMutex);
-    if (invokeDestroyCb == true) {
-        (destroyCompleteCb) ();
+    if (invokeDestroyCb) {
+        if (!destroyCompleteCb) {
+            (destroyCompleteCb) ();
+        }
         delete this;
     }
 }
