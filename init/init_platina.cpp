@@ -186,5 +186,5 @@ void vendor_load_properties()
     property_set("dalvik.vm.heapmaxfree", heapmaxfree);
     // fingerprint
     property_override("ro.build.description", "platina-user 10 QKQ1.190910.002 V11.0.1.0.QDTMIXM release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys");	
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200705.002/6506677:user/release-keys");	
 }
