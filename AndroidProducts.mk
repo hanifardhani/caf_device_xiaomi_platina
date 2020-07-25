@@ -22,9 +22,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ancient_platina.mk
+    $(LOCAL_DIR)/pixeldust_platina.mk
 
 COMMON_LUNCH_CHOICES := \
-    ancient_platina-eng \
-    ancient_platina-userdebug \
-    ancient_platina-user
+    pixeldust_platina-eng \
+    pixeldust_platina-userdebug \
+    pixeldust_platina-user
