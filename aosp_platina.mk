@@ -42,6 +42,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="platina"
 
 TARGET_VENDOR_PRODUCT_NAME := platina
+TARGET_VENDOR_DEVICE_NAME := platina
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Device identifier
