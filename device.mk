@@ -540,9 +540,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # Vendor files
 $(call inherit-product, vendor/xiaomi/platina/platina-vendor.mk)
