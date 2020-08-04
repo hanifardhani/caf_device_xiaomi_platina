@@ -217,6 +217,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.oem_unlock_supported=1
 
+# Paranoid Doze
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sensor.proximity=true \
+    ro.sensor.pickup=android.sensor.tilt_detector
+
 # Proximity
 PRODUCT_PROPERTY_OVERRIDES += \
     gsm.proximity.enable=true
