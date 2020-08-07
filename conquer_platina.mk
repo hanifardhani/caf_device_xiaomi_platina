@@ -31,6 +31,7 @@ $(call inherit-product, device/xiaomi/platina/device.mk)
 
 # Inherit some common Conquer OS stuff.
 $(call inherit-product, vendor/conquer/config/common.mk)
+CONQUER_BUILD_TYPE=OFFICIAL
 
 # Inherit AOSP product configuration
 TARGET_BOOT_ANIMATION_RES := 1080
