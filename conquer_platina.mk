@@ -29,8 +29,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/platina/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Conquer OS stuff.
+$(call inherit-product, vendor/conquer/config/common.mk)
 
 # Inherit AOSP product configuration
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -48,6 +48,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosp_platina
+PRODUCT_NAME := conquer_platina
 PRODUCT_DEVICE := platina
 PRODUCT_MODEL := MI 8 Lite
